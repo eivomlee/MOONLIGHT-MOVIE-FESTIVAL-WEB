@@ -82,3 +82,20 @@
     font-weight: 900;
 }
 
+.search_button {
+    margin-left: 5%;
+    color: white;
+}
+
+.search_input {
+    width: 0%;
+    padding: 3% 5%;
+    border: solid 1px rgba(255,255,255,0.85);
+    opacity: 0;
+    transition: ease width 0.5s, ease opacity 0.5s;
+}
+
+.active {
+    opacity: 1;
+    width: 100%;
+}

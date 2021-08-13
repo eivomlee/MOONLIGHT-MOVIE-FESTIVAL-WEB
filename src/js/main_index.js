@@ -7,6 +7,8 @@ window.onload = function () {
 
     random_backgroundImg();
 
+    const searchButton = document.querySelector(".search_button");
+    searchButton.addEventListener("click", activeSearch);
 }
 
 function move_scroll(event) {
@@ -28,14 +30,8 @@ function random_backgroundImg() {
     img_container.style.repeat = "no-repeat";
 }
 
-const searchInput = document.querySelector(".search_input");
-const searchButton = document.querySelector(".search_button");
-
-searchButton.addEventListener("click", activateSearch);
-
-
-function activateSearch(event) {
-   console.log(1);
+function activeSearch(event) {
     event.preventDefault();
+    const searchInput = document.querySelector(".search_input");
     searchInput.classList.toggle("active");
 }
